@@ -1,0 +1,35 @@
+=== RELATIONS AND ADDITIONAL TAGS DEFINED IN EDAM ===<BR>
+<BR>
+!!! THIS IS A TEMPORARY DRAFT DOCUMENT !!!<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+Types of relations defined in EDAM. Definitions, domains, and ranges are present in the EDAM .obo file. EDAM relations apply between concepts, annotated entities, entities and concepts (or even vice versa).<BR>
+<BR>
+Relation			Inverse				Maintained in EDAM						Example<BR>
+has input			is input of			Operation has input Data				Sequence annotation has input Sequence record<BR>
+has output is		output of			Operation has output Data				RNA structure prediction has output RNA structure record<BR>
+has topic			is topic of			Operation or Data has topic Topic	Phylogenetic tree has topic Phylogenetics<BR>
+has format			is format of		Format is format of Data					CHP is format of Processed microarray data<BR>
+has identifier		is identifier of		Identifier is identifier of Data			InterPro accession is identifier of Protein signature<BR>
+has function		is function of		not between EDAM concepts			a tool has function Sequence assembly<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+Some concepts have additional information maintained in EDAM, defined via additional “metadata tags” in the .obo file:<BR>
+<BR>
+* Regular expression * constraints allowed values of types of identifiers (mostly accessions), and is useful for validation of inputs to tools.<BR>
+As examples, EMBOSS will in the future use regular expressions from EDAM to validate identifiers before requesting the corresponding data, and BioXSD will include accession types generated from EDAM, with the constraining patterns.<BR>
+<BR>
+* Example * lists one or more valid identifiers.<BR>
+<BR>
+* Specification * trailing qualifier defines a URL reference within a Format concept as pointing to its documentation.<BR>
+<BR>
+* Cardinality *, * Minimum cardinality *, and * Maximum cardinality * trailing modifiers define, where generally applicable, the cardinality constraints of concrete has input and has output relations.<BR>
+For example Sequence alignment construction consumes at least two Sequence-s (minCardinality=2).<BR>
+<BR>
+* Note * trailing modifier includes comments related to synonyms and relations.<BR>
+<BR>
+* Since * trailing modifier states which version of EDAM (from beta 13 onward) an obsolete concept has been obsolete since.<BR>

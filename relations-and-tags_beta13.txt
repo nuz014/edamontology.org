@@ -1,0 +1,142 @@
+!
+! Relations
+!
+[Typedef]
+id: has_topic
+name: has_topic
+def: "'Data' or 'Operation' is within the scope of a 'Topic'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: is_topic_of
+domain: EDAM:0000004 ! Operation
+domain: EDAM:0000006 ! Data
+range: EDAM:0000003 ! Topic
+! Note: second 'domain' line is not visible in OBOEdit
+
+[Typedef]
+id: has_input
+name: has_input
+def: "An 'Operation' consumes a certain type of 'Data'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: is_input_of
+domain: EDAM:0000004 ! Operation
+range: EDAM:0000006 ! Data
+
+[Typedef]
+id: has_output
+name: has_output
+def: "An 'Operation' produces a certain type of 'Data'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: is_output_of
+domain: EDAM:0000004 ! Operation
+range: EDAM:0000006 ! Data
+
+[Typedef]
+id: has_format
+name: has_format
+def: "'Data' has a certain 'Format'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: is_format_of
+domain: EDAM:0000006 ! Data
+range: EDAM:0001915 ! Format
+
+[Typedef]
+id: has_identifier
+name: has_identifier
+def: "'Data' is identified by an 'Identifier'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: is_identifier_of
+domain: EDAM:0000006 ! Data
+range: EDAM:0000842 ! Identifier
+
+! For annotating tools
+[Typedef]
+id: has_operation
+name: has_operation
+def: "A tool has an 'Operation'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+range: EDAM:0000004 ! Operation
+
+[Typedef]
+id: is_format_of
+name: is_format_of
+def: "A data 'Format' is a format of a certain type of 'Data'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: has_format
+domain: EDAM:0001915 ! Format
+range: EDAM:0000006 ! Data
+
+[Typedef]
+id: is_identifier_of
+name: is_identifier_of
+def: "A data 'Identifier' is an identifier of a certain type of 'Data'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: has_identifier
+domain: EDAM:0000842 ! Identifier
+range: EDAM:0000006 ! Data
+
+[Typedef]
+id: is_topic_of
+name: is_topic_of
+def: "'Topic' is_topic_of 'Data' or 'Operation'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: has_topic
+domain: EDAM:0000003 ! Topic
+range: EDAM:0000003 ! Topic
+
+[Typedef]
+id: is_input_of
+name: is_input_of
+def: "'Data' is an input of an 'Operation'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: has_input
+domain: EDAM:0000006 ! Data
+range: EDAM:0000004 ! Operation
+
+[Typedef]
+id: is_output_of
+name: is_output_of
+def: "'Data' is an output of an 'Operation'." [EDAM:EBI]
+is_anti_symmetric: true
+is_cyclic: false
+is_transitive: true
+inverse_of: has_output
+domain: EDAM:0000006 ! Data
+range: EDAM:0000004 ! Operation
+
+
+
+[Typedef]
+id: regex
+name: regex
+is_metadata_tag: true
+
+[Typedef]
+id: spec
+name: spec
+is_metadata_tag: true
+
+[Typedef]
+id: seealso
+name: seealso
+is_metadata_tag: true
+

@@ -1,0 +1,53 @@
+OK:
+
+- idspaces (URIs) work fine
+
+- updating info (concretely homepage) worked, but took time until ontology was parsed (now works with 'update info of current version'; before worked with 'upload new version')
+
+
+
+----
+OBO PROBLEMS:
+
+-? remove the older version 1.1 of EDAM (id=1498, uploaded 07/05/2012)
+
+-? remove the older version 1.2 of EDAM (id=1498, uploaded 12/13/2012)
+
+- trailing modifiers in OBO probably still not supported (also {note=} with synonyms looked weirdish)
+
+- URIs of synonyms from OBO format are plotted with ] in the end (if they're the last ones in the [...] list)
+
+- related concepts other than by is_a are not clickable
+
+(- showing URIs of edamontology.org everywhere with internal synonyms and definitions is annoying - make sure they're not in the OBO file anymore)
+
+
+BEFORE OBO UPLOAD:
+
+-> RENAME TO EDAM.OWL
+
+-> COMMENT OUT <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
+----
+
+
+
+
+
+NEW REQUIREMENTS/SUGGESTIONS:	(from our users and collaborators)
+- Somehow repair problem with <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>--TEST AT TEST INSTANCE!!	!DRAW/WRITE SUGGESITION!
+- Probably we don't want to see Bioportal's PURLs anywhere (e.g. subsets?)
+- Tree navigation:
+	--deprecated concepts last in the list, color- & font-distinguished	!DRAW/WRITE SUGGESITION!
+	--open whole subtree on doubleclick (or a special button in the right frame, or enough even by a special flag in the URL query)	!DRAW/WRITE SUGGESITION!
+	--distinguish ones that are shown first time of multiple times in the tree, and second or further time of multiple times in the tree	!DRAW/WRITE SUGGESITION!
+	--see "..TREE.." in "agenda....txt" for more!
+- "Jump To" text search:
+	--synonyms into account? ARE OR NOT? somehow show that a synonym among hits (ideally even type of synonym and/or primary term)	!DRAW/WRITE SUGGESITION!
+	--search in definitions somehow! how show?	!DRAW/WRITE SUGGESITION!
+	--show root concept by small font (right aligned, no?) in the dropdown (as a small table)	!DRAW/WRITE SUGGESITION!
+	--deprecated concepts last in the list, color- & font-distinguished, shown root concept	!DRAW/WRITE SUGGESITION!
+	--after choosing, open (&highlight?) all placements in the tree in multiple	!DRAW/WRITE SUGGESITION!
+- Tabular export:
+	--EITHER an option for a TSV or even XLS format on export of (SUB)ONTOLOGIES from REST	!DRAW/WRITE SUGGESITION!
+	--OR a super-easily importable JSON or XML into Excel	!DRAW/WRITE SUGGESITION!
+	--BUT must have multiple-times-occuring nodes highlighted!	!DRAW/WRITE SUGGESITION!

@@ -1,0 +1,300 @@
+C:\Users\Matus\Documents\GitHub\edamontology [master]> ls
+
+
+    Directory: C:\Users\Matus\Documents\GitHub\edamontology
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        18/06/2014     16:55       6805 changelog.txt
+-a---        25/02/2013     16:55       2525 concept.uris
+-a---        25/02/2013     23:37       2623 EDAM.uris
+-a---        23/01/2012     02:12     100212 EDAMconcepts.png
+-a---        18/06/2014     16:26    2646230 EDAM_1.3.owl
+-a---        26/02/2013     01:39      16958 favicon.ico
+-a---        26/02/2013     01:38       4951 favicon.png
+-a---        20/02/2014     23:28      77197 page_1.3.html
+-a---        18/06/2014     16:55       6755 README
+-a---        18/06/2014     17:12        139 README.md
+-a---        26/02/2013     15:24       2733 relations-and-properties.uris
+-a---        21/02/2013     23:55       4358 relations-and-properties_1.3.html
+-a---        25/02/2013     23:36       3574 URIs.html
+
+
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git mv EDAM_1.3.owl EDAM_
+1.4_dev.owl
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~1 -0]> ls
+
+
+    Directory: C:\Users\Matus\Documents\GitHub\edamontology
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        18/06/2014     16:55       6805 changelog.txt
+-a---        25/02/2013     16:55       2525 concept.uris
+-a---        25/02/2013     23:37       2623 EDAM.uris
+-a---        23/01/2012     02:12     100212 EDAMconcepts.png
+-a---        18/06/2014     16:26    2646230 EDAM_1.4_dev.owl
+-a---        26/02/2013     01:39      16958 favicon.ico
+-a---        26/02/2013     01:38       4951 favicon.png
+-a---        20/02/2014     23:28      77197 page_1.3.html
+-a---        18/06/2014     16:55       6755 README
+-a---        18/06/2014     17:12        139 README.md
+-a---        26/02/2013     15:24       2733 relations-and-properties.uris
+-a---        21/02/2013     23:55       4358 relations-and-properties_1.3.html
+-a---        25/02/2013     23:36       3574 URIs.html
+
+
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~1 -0]> git mv page_1.3.
+html page_1.4_dev.html
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~2 -0]> ls
+
+
+    Directory: C:\Users\Matus\Documents\GitHub\edamontology
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        18/06/2014     16:55       6805 changelog.txt
+-a---        25/02/2013     16:55       2525 concept.uris
+-a---        25/02/2013     23:37       2623 EDAM.uris
+-a---        23/01/2012     02:12     100212 EDAMconcepts.png
+-a---        18/06/2014     16:26    2646230 EDAM_1.4_dev.owl
+-a---        26/02/2013     01:39      16958 favicon.ico
+-a---        26/02/2013     01:38       4951 favicon.png
+-a---        20/02/2014     23:28      77197 page_1.4_dev.html
+-a---        18/06/2014     16:55       6755 README
+-a---        18/06/2014     17:12        139 README.md
+-a---        26/02/2013     15:24       2733 relations-and-properties.uris
+-a---        21/02/2013     23:55       4358 relations-and-properties_1.3.html
+-a---        25/02/2013     23:36       3574 URIs.html
+
+
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~2 -0]> git mv relation-
+and-properties_1.3.html relation-and-properties_1.4_dev.html
+fatal: bad source, source=relation-and-properties_1.3.html, destination=relation
+-and-properties_1.4_dev.html
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~2 -0]> git mv README ch
+angelog.txt
+fatal: destination exists, source=README, destination=changelog.txt
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~2 -0]> git rm changelog
+.txt
+rm 'changelog.txt'
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~2 -1]> git mv README ch
+angelog.txt
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~3 -1]> git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       renamed:    EDAM_1.3.owl -> EDAM_1.4_dev.owl
+#       deleted:    README
+#       modified:   changelog.txt
+#       renamed:    page_1.3.html -> page_1.4_dev.html
+#
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~3 -1]> git mv relations
+-and-properties_1.3.html relations-and-properties_1.4_dev.html
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~4 -1]> git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       renamed:    EDAM_1.3.owl -> EDAM_1.4_dev.owl
+#       deleted:    README
+#       modified:   changelog.txt
+#       renamed:    page_1.3.html -> page_1.4_dev.html
+#       renamed:    relations-and-properties_1.3.html -> relations-and-propertie
+s_1.4_dev.html
+#
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~4 -1]> git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       deleted:    EDAM_1.3.owl
+#       deleted:    README
+#       modified:   changelog.txt
+#       deleted:    page_1.3.html
+#       deleted:    relations-and-properties_1.3.html
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       EDAM_1.4_dev.owl
+#       page_1.4_dev.html
+#       relations-and-properties_1.4_dev.html
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\Matus\Documents\GitHub\edamontology [master +3 ~1 -4 !]> git reset --ha
+rd
+HEAD is now at a06d879 initial commit of EDAM 1.3 and the sourceforge README
+C:\Users\Matus\Documents\GitHub\edamontology [master +3 ~0 -0 !]> git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       EDAM_1.4_dev.owl
+#       page_1.4_dev.html
+#       relations-and-properties_1.4_dev.html
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\Matus\Documents\GitHub\edamontology [master +3 ~0 -0 !]> ls
+
+
+    Directory: C:\Users\Matus\Documents\GitHub\edamontology
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        18/06/2014     17:48       6805 changelog.txt
+-a---        25/02/2013     16:55       2525 concept.uris
+-a---        25/02/2013     23:37       2623 EDAM.uris
+-a---        23/01/2012     02:12     100212 EDAMconcepts.png
+-a---        18/06/2014     17:48    2699388 EDAM_1.3.owl
+-a---        18/06/2014     16:26    2646230 EDAM_1.4_dev.owl
+-a---        26/02/2013     01:39      16958 favicon.ico
+-a---        26/02/2013     01:38       4951 favicon.png
+-a---        18/06/2014     17:48      77197 page_1.3.html
+-a---        20/02/2014     23:28      77197 page_1.4_dev.html
+-a---        18/06/2014     17:48       6755 README
+-a---        18/06/2014     17:12        139 README.md
+-a---        26/02/2013     15:24       2733 relations-and-properties.uris
+-a---        18/06/2014     17:48       4358 relations-and-properties_1.3.html
+-a---        21/02/2013     23:55       4358 relations-and-properties_1.4_dev.h
+                                             tml
+-a---        25/02/2013     23:36       3574 URIs.html
+
+
+C:\Users\Matus\Documents\GitHub\edamontology [master +3 ~0 -0 !]> rm *_1.4*
+C:\Users\Matus\Documents\GitHub\edamontology [master]> ls
+
+
+    Directory: C:\Users\Matus\Documents\GitHub\edamontology
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        18/06/2014     17:48       6805 changelog.txt
+-a---        25/02/2013     16:55       2525 concept.uris
+-a---        25/02/2013     23:37       2623 EDAM.uris
+-a---        23/01/2012     02:12     100212 EDAMconcepts.png
+-a---        18/06/2014     17:48    2699388 EDAM_1.3.owl
+-a---        26/02/2013     01:39      16958 favicon.ico
+-a---        26/02/2013     01:38       4951 favicon.png
+-a---        18/06/2014     17:48      77197 page_1.3.html
+-a---        18/06/2014     17:48       6755 README
+-a---        18/06/2014     17:12        139 README.md
+-a---        26/02/2013     15:24       2733 relations-and-properties.uris
+-a---        18/06/2014     17:48       4358 relations-and-properties_1.3.html
+-a---        25/02/2013     23:36       3574 URIs.html
+
+
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git mv EDAM_1.3.owl EDAM_
+1.4_dev.owl
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~1 -0]> git mv page_1.3.
+html page_1.4_dev.html
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~2 -0]> git mv relations
+-and-properties_1.3.html relations-and-properties_1.4_dev.html
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~3 -0]> ls
+
+
+    Directory: C:\Users\Matus\Documents\GitHub\edamontology
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        18/06/2014     17:48       6805 changelog.txt
+-a---        25/02/2013     16:55       2525 concept.uris
+-a---        25/02/2013     23:37       2623 EDAM.uris
+-a---        23/01/2012     02:12     100212 EDAMconcepts.png
+-a---        18/06/2014     17:48    2699388 EDAM_1.4_dev.owl
+-a---        26/02/2013     01:39      16958 favicon.ico
+-a---        26/02/2013     01:38       4951 favicon.png
+-a---        18/06/2014     17:48      77197 page_1.4_dev.html
+-a---        18/06/2014     17:48       6755 README
+-a---        18/06/2014     17:12        139 README.md
+-a---        26/02/2013     15:24       2733 relations-and-properties.uris
+-a---        18/06/2014     17:48       4358 relations-and-properties_1.4_dev.h
+                                             tml
+-a---        25/02/2013     23:36       3574 URIs.html
+
+
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~3 -0]> git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       renamed:    EDAM_1.3.owl -> EDAM_1.4_dev.owl
+#       renamed:    page_1.3.html -> page_1.4_dev.html
+#       renamed:    relations-and-properties_1.3.html -> relations-and-propertie
+s_1.4_dev.html
+#
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~3 -0]> git commit
+[master bf9c6df] Rename of explicitly versioned files from 1.3 to 1.4_dev
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename EDAM_1.3.owl => EDAM_1.4_dev.owl (100%)
+ rename page_1.3.html => page_1.4_dev.html (100%)
+ rename relations-and-properties_1.3.html => relations-and-properties_1.4_dev.ht
+ml (100%)
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git rm README
+rm 'README'
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~0 -1]> git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       deleted:    README
+#
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~0 -1]> git commit
+[master d7fcd5e] Removal of old README file from sourceforge (now see changelog.
+txt).
+ 1 file changed, 159 deletions(-)
+ delete mode 100644 README
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git push origin
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 541 bytes | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+To https://github.com/edamontology/edamontology.git
+   a06d879..d7fcd5e  master -> master
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git commit
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   EDAM_1.4_dev.owl
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~1 -0]> git add EDAM_1.4
+_dev.owl
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~1 -0]> git commit
+[master 3adbac8] Version inside the OWL file updated to 1.4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git push origin
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 405 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/edamontology/edamontology.git
+   d7fcd5e..3adbac8  master -> master
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git add EDAM_1.4_dev.owl
+C:\Users\Matus\Documents\GitHub\edamontology [master +0 ~1 -0]> git commit
+[master f619737] Commit of changes into EDAM 1.4 made by Jon until 2014-Jun-18.
+ 1 file changed, 9910 insertions(+), 9739 deletions(-)
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git push origin
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 64.33 KiB | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/edamontology/edamontology.git
+   3adbac8..f619737  master -> master
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git pull
+Already up-to-date.
+C:\Users\Matus\Documents\GitHub\edamontology [master]> git diff HEAD^ HEAD

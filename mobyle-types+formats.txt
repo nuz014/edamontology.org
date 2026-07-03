@@ -1,0 +1,282 @@
+data type: 2DStructure - data format: CT - bio type: 
+data type: 2DStructure - data format: RNAML - bio type: RNA
+data type: 2DStructure - data format: SS - bio type: 
+data type: _3DStructure - data format: PDB - bio type: 
+data type: _3DStructure - data format: PDB - bio type: Protein
+data type: AaindexData - data format:  - bio type: Protein
+data type: AceAssembly - data format: ACE - bio type: 
+data type: Alignment - data format: 
+data type: Alignment - data format:  - bio type: 
+data type: Alignment - data format: CLUSTAL - bio type: 
+data type: Alignment - data format: CLUSTAL - bio type: DNA
+data type: Alignment - data format: CLUSTAL - bio type: Nucleic
+data type: Alignment - data format: CLUSTAL - bio type: Protein
+data type: Alignment - data format: Fasta - bio type: 
+data type: Alignment - data format: FASTA - bio type: 
+data type: Alignment - data format: FASTA - bio type: Protein
+data type: Alignment - data format: NEXUS - bio type: 
+data type: Alignment - data format: PHYLIPI - bio type: 
+data type: Alignment - data format: PHYLIPI - bio type: DNA
+data type: Alignment - data format: PHYLIPI - bio type: Protein
+data type: Alignment - data format: PHYLIPS - bio type: 
+data type: Alignment - data format: STOCKHOLM - bio type: 
+data type: Alignment - data format: STOCKHOLM - bio type: Protein
+data type: AlnHtmlReport - data format:  - bio type: 
+data type: AminoAcidClassification - data format:  - bio type: Protein
+data type: AminoAcidFrequencies - data format:  - bio type: Protein
+data type: AminoAcidHydropathy - data format:  - bio type: Protein
+data type: AminoAcidProperties - data format:  - bio type: Protein
+data type: AncestorsFile - data format:  - bio type: 
+data type: BananaReport - data format:  - bio type: 
+data type: BasePairStackingEnergies - data format:  - bio type: 
+data type: BasePairTwistAngles - data format:  - bio type: 
+data type: BaseQuality - data format: PhrapQuality - bio type: 
+data type: BaseTrimerRollAngles - data format:  - bio type: 
+data type: Binary - data format:  - bio type: 
+data type: BitScores - data format:  - bio type: 
+data type: Blast2taxoclassReport - data format:  - bio type: 
+data type: Blast2taxonomyHtmlReport - data format:  - bio type: 
+data type: Blast2taxonomyReport - data format:  - bio type: 
+data type: BlastHtmlReport - data format:  - bio type: 
+data type: BlastTextReport - data format:  - bio type: 
+data type: BlastXmlReport - data format:  - bio type: 
+data type: Boolean - data format:  - bio type: 
+data type: Boolean - data format: NEWICK - bio type: 
+data type: BoxshadeHtmlReport - data format:  - bio type: 
+data type: BoxshadeRtfReport - data format:  - bio type: 
+data type: BoxshadeXfigReport - data format:  - bio type: 
+data type: BtwistedReport - data format:  - bio type: 
+data type: CaiReport - data format:  - bio type: 
+data type: CaiValues - data format:  - bio type: 
+data type: CandidateRegion - data format:  - bio type: 
+data type: CapConstraint - data format:  - bio type: 
+data type: CbiValues - data format:  - bio type: 
+data type: ChargeReport - data format:  - bio type: 
+data type: ChecktransReport - data format:  - bio type: 
+data type: ChipsReport - data format:  - bio type: 
+data type: Choice - data format:  - bio type: 
+data type: Choice - data format:  - bio type: DNA
+data type: Choice - data format:  - bio type: Protein
+data type: cirdnaMappingCommands - data format:  - bio type: 
+data type: ClippingParameters - data format:  - bio type: 
+data type: ClustalOReport - data format:  - bio type: 
+data type: Cnv - data format:  - bio type: 
+data type: CodcmpReport - data format:  - bio type: 
+data type: CoderetReport - data format:  - bio type: 
+data type: CofoldSequence - data format:  - bio type: Nucleic
+data type: CompseqReport - data format:  - bio type: 
+data type: ConsensusAlphabet - data format:  - bio type: 
+data type: Constraint - data format:  - bio type: 
+data type: Coordinates - data format:  - bio type: 
+data type: Costs - data format:  - bio type: 
+data type: CpgplotReport - data format:  - bio type: 
+data type: CpgreportReport - data format:  - bio type: 
+data type: CuspReport - data format:  - bio type: 
+data type: Dcalignment - data format: 
+data type: DensityReport - data format: 
+data type: DistanceMatrix - data format:  - bio type: 
+data type: DsspOutput - data format:  - bio type: 
+data type: DsspReport - data format:  - bio type: 
+data type: EdialignReport - data format:  - bio type: 
+data type: ElpReport - data format:  - bio type: 
+data type: EmbossDistanceMatrix - data format:  - bio type: 
+data type: EmowseReport - data format:  - bio type: 
+data type: EnergyParameter - data format:  - bio type: 
+data type: EnergyParameterFile - data format:  - bio type: 
+data type: EntryFullText - data format:  - bio type: 
+data type: EnzymeData - data format:  - bio type: 
+data type: Enzyme - data format: ENZYME - bio type: Protein
+data type: EpestfindReport - data format:  - bio type: 
+data type: EpsilonFile - data format:  - bio type: 
+data type: Est2genomeReport - data format:  - bio type: 
+data type: FastaHtmlReport - data format:  - bio type: 
+data type: FastaTextReport - data format:  - bio type: 
+data type: Feature - data format: 
+data type: Feature - data format: GFF - bio type: 
+data type: Features - data format:  - bio type: 
+data type: Filename - data format:  - bio type: 
+data type: Filename - data format:  - bio type: DNA
+data type: Filename - data format:  - bio type: Protein
+data type: FindkmReport - data format:  - bio type: 
+data type: Float - data format:  - bio type: 
+data type: FopValues - data format:  - bio type: 
+data type: ForceAlignmentPattern - data format:  - bio type: 
+data type: FreakReport - data format:  - bio type: 
+data type: GeeceeReport - data format:  - bio type: 
+data type: GenesId - data format: USAList - bio type: 
+data type: GenoClasAln - data format:  - bio type: 
+data type: GenomeSequence - data format:  - bio type: 
+data type: GffCustomRc - data format:  - bio type: 
+data type: GruppiReport - data format:  - bio type: 
+data type: HMMKeys - data format:  - bio type: 
+data type: HmmProfileBin - data format:  - bio type: 
+data type: HmmProfile - data format:  - bio type: 
+data type: HmmProfile - data format: HMMER2 - bio type: Protein
+data type: HmmProfile - data format: HMMER3 - bio type: 
+data type: HmmTextProfile - data format:  - bio type: Protein
+data type: HmomentReport - data format:  - bio type: 
+data type: ID_Mapping - data format:  - bio type: 
+data type: IepReport - data format:  - bio type: 
+data type: InfoalignReport - data format:  - bio type: 
+data type: InfoseqReport - data format:  - bio type: 
+data type: Integer - data format:  - bio type: 
+data type: Intensity - data format:  - bio type: 
+data type: InvertedReport - data format:  - bio type: 
+data type: IsochoreReport - data format:  - bio type: 
+data type: LindnaMappingCommands - data format:  - bio type: 
+data type: MegamergerReport - data format:  - bio type: 
+data type: MfoldDetailHtmlReport - data format:  - bio type: 
+data type: MfoldFoldingConstraints - data format:  - bio type: 
+data type: MfoldHtmlReport - data format:  - bio type: 
+data type: MixturePattern - data format:  - bio type: 
+data type: MolecularWeights - data format:  - bio type: 
+data type: Motif - data format: PROSITE - bio type: Protein
+data type: MrepsXmlReport - data format:  - bio type: 
+data type: MSAFile - data format:  - bio type: 
+data type: MSAProbsAnnotation - data format:  - bio type: 
+data type: MultipleChoice - data format:  - bio type: 
+data type: MuscleHtmlAlignment - data format:  - bio type: 
+data type: NeedleallError - data format:  - bio type: 
+data type: NetChop - data format:  - bio type: 
+data type: NetNglyc - data format:  - bio type: 
+data type: NetNGlyc_Graph - data format: GIF - bio type: 
+data type: NetNGlyc_Graph - data format: Postscript - bio type: 
+data type: NetOGlyc - data format:  - bio type: 
+data type: NetOGlyc_graphic - data format: GIF - bio type: 
+data type: NetOGlyc_graphic - data format: PostScript - bio type: 
+data type: NewcpgreportReport - data format:  - bio type: 
+data type: NewcpgseekReport - data format:  - bio type: 
+data type: OddcompReport - data format:  - bio type: 
+data type: PalindromeReport - data format:  - bio type: 
+data type: Pattern - data format:  - bio type: DNA
+data type: Pattern - data format:  - bio type: Protein
+data type: PatternSymbol - data format:  - bio type: 
+data type: Pdb21Report - data format: excel - bio type: 
+data type: pdb2Log - data format:  - bio type: 
+data type: Pdb2Report - data format: excel - bio type: 
+data type: PDBIdsList - data format:  - bio type: 
+data type: Pdf - data format:  - bio type: 
+data type: PepinfoReport - data format:  - bio type: 
+data type: PepstatsReport - data format:  - bio type: 
+data type: PeptideMolweights - data format:  - bio type: 
+data type: Phenotype - data format:  - bio type: 
+data type: PhylipCategoriesRates - data format:  - bio type: 
+data type: PhylipDiscreteCharMatrix - data format:  - bio type: 
+data type: PhylipDistanceMatrix - data format:  - bio type: 
+data type: PhylipWeight - data format:  - bio type: 
+data type: Picture - data format: 
+data type: Picture - data format:  - bio type: 
+data type: PostScript - data format:  - bio type: 
+data type: PrettyseqReport - data format:  - bio type: 
+data type: Primer3Mishybridizing - data format:  - bio type: 
+data type: Primer3Mispriming - data format:  - bio type: 
+data type: Primer3Report - data format:  - bio type: 
+data type: PrimerPairs - data format:  - bio type: 
+data type: PrimoOligo - data format:  - bio type: 
+data type: PrimoRegion - data format:  - bio type: 
+data type: PrimoRepeats - data format:  - bio type: 
+data type: ProfileOrMatrix - data format:  - bio type: 
+data type: ProfitReport - data format:  - bio type: 
+data type: ProphecyReport - data format:  - bio type: 
+data type: ProsePattern - data format:  - bio type: 
+data type: PrositePattern - data format:  - bio type: 
+data type: PrositeProfile - data format:  - bio type: 
+data type: PscanReport - data format:  - bio type: 
+data type: PsortHtmlReport - data format:  - bio type: 
+data type: QueryNameReport - data format:  - bio type: 
+data type: QuicktandemReport - data format:  - bio type: 
+data type: RedataReport - data format:  - bio type: 
+data type: RemapReport - data format:  - bio type: 
+data type: Report - data format:  - bio type: 
+data type: Report - data format: HTML - bio type: 
+data type: Report - data format: RDB - bio type: 
+data type: RestoverReport - data format:  - bio type: 
+data type: RestrictionEnzymeData - data format:  - bio type: 
+data type: RestrictionEnzymeMethylationData - data format:  - bio type: 
+data type: RestrictionPattern - data format:  - bio type: 
+data type: ribosum_matrix - data format:  - bio type: 
+data type: RnadistanceReport - data format:  - bio type: 
+data type: RnafoldOutput - data format:  - bio type: 
+data type: RnaplotdOutput - data format:  - bio type: 
+data type: RNASequence - data format:  - bio type: RNA
+data type: RNAStructure - data format:  - bio type: 
+data type: RNAStructure - data format:  - bio type: RNA
+data type: RNAupOut - data format:  - bio type: 
+data type: SAXSIntepolation - data format:  - bio type: 
+data type: SAXSMerge - data format:  - bio type: 
+data type: ScangenMotifDefinition - data format:  - bio type: 
+data type: ScanPattern - data format:  - bio type: 
+data type: ScnagenReport - data format:  - bio type: 
+data type: Sequence - data format: 
+data type: Sequence - data format:  - bio type: 
+data type: Sequence - data format:  - bio type: DNA
+data type: Sequence - data format: EMBL - bio type: 
+data type: Sequence - data format: EMBL - bio type: DNA
+data type: Sequence - data format: EMBL - bio type: Protein
+data type: Sequence - data format: FASTA - bio type: 
+data type: Sequence - data format: FASTA - bio type: DNA
+data type: Sequence - data format: FASTA - bio type: Protein
+data type: Sequence - data format: FASTA - bio type: RNA
+data type: Sequence - data format: GenAl - bio type: 
+data type: Sequence - data format: GENBANK - bio type: DNA
+data type: Sequence - data format: IG - bio type: 
+data type: Sequence - data format: IG - bio type: DNA
+data type: Sequence - data format: NBRF - bio type: 
+data type: Sequence - data format: NBRF - bio type: DNA
+data type: Sequence - data format: RAW - bio type: 
+data type: Sequence - data format: SWISSPROT - bio type: 
+data type: SequenceOverlap - data format:  - bio type: 
+data type: SequenceWithStructureConstraint - data format:  - bio type: 
+data type: SequenceWithStructureConstraint - data format: FASTA - bio type: RNA
+data type: SetOfAlignment - data format:  - bio type: 
+data type: SetOfPhylipDiscreteCharMatrix - data format:  - bio type: 
+data type: Sex - data format:  - bio type: 
+data type: ShowalignReport - data format:  - bio type: 
+data type: ShowfeatReport - data format:  - bio type: 
+data type: ShoworfReport - data format:  - bio type: 
+data type: ShowpepReport - data format:  - bio type: 
+data type: ShowseqReport - data format:  - bio type: 
+data type: SignalIntensity - data format:  - bio type: 
+data type: signalp - data format:  - bio type: 
+data type: signalp_graphic - data format: EPS - bio type: 
+data type: signalp_graphic - data format: GIF - bio type: 
+data type: SigPattern - data format:  - bio type: 
+data type: SixpackReport - data format:  - bio type: 
+data type: Split - data format:  - bio type: 
+data type: StandardMolecularWeights - data format:  - bio type: 
+data type: StrideReport - data format:  - bio type: 
+data type: String - data format:  - bio type: 
+data type: StssearchReport - data format:  - bio type: 
+data type: SupermatcherError - data format:  - bio type: 
+data type: SycoReport - data format:  - bio type: 
+data type: TacgHtmlReport - data format:  - bio type: 
+data type: TacgTextReport - data format:  - bio type: 
+data type: TandemReport - data format:  - bio type: 
+data type: targetp - data format:  - bio type: 
+data type: TestcodeData - data format:  - bio type: 
+data type: Text - data format: 
+data type: Text - data format:  - bio type: 
+data type: Text - data format:  - bio type: DNA
+data type: TextsearchReport - data format:  - bio type: 
+data type: TipdateAlignment - data format:  - bio type: 
+data type: tmhmm - data format:  - bio type: 
+data type: tmhmm_graphic - data format: EPS - bio type: 
+data type: tmhmm_graphic - data format: png - bio type: 
+data type: ToppredHtmlReport - data format:  - bio type: 
+data type: TransfacData - data format:  - bio type: 
+data type: Tree - data format: 
+data type: Tree - data format:  - bio type: 
+data type: Tree - data format: NEWICK - bio type: 
+data type: TrnaScanFirstPassResult - data format:  - bio type: 
+data type: UsaList - data format:  - bio type: 
+data type: Vector - data format:  - bio type: 
+data type: VectorstripReport - data format:  - bio type: 
+data type: VerboseReport - data format:  - bio type: 
+data type: vienna_likely_pairs - data format:  - bio type: 
+data type: WhiteWimleyDatafile - data format:  - bio type: 
+data type: WobbleReport - data format:  - bio type: 
+data type: WordcountReport - data format:  - bio type: 
+data type: WordfinderError - data format:  - bio type: 
+data type: WordmatchLog - data format:  - bio type: 
+data type: XpoundReport - data format:  - bio type: 
+data type: XreportReport - data format:  - bio type: 

@@ -1,0 +1,320 @@
+
+!
+! Relations
+!
+
+[Typedef]
+id: has_input
+name: has input
+subset: relations
+def: "'A has_input B' defines for the subject A, that it has the object B as a necessary or actual input or input argument." [http://edamontology.org]
+comment: Subject A can either be concept that is or has an 'Operation' function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an 'Operation' function or is an 'Operation'. Object B can be any concept or entity. {note="In EDAM, only 'has_input' is explicitly defined between EDAM concepts ('Operation' 'has_input' 'Data'). The inverse, 'is_input_of', is not explicitly defined."}
+synonym: "has input" EXACT [http://wsio.org/has_input]
+synonym: "has_specified_input" NARROW [http://purl.obolibrary.org/obo/OBI_0000293] {note="'OBI:has_specified_input' only relates subjects that are a 'planned process' (http://purl.obolibrary.org/obo/OBI_0000011) with objects that are a 'continuant' (snap:Continuant)."}
+synonym: "has_participant" RELATED [OBO_REL:has_participant] {note="'OBO_REL:has_participant' is narrower in the sense that it only relates ontological categories (concepts) that are a 'process' (span:Process) with ontological categories that are a 'continuant' (snap:Continuant), and broader in the sense that it relates with any participating objects not just inputs or input arguments of the subject."}
+inverse_of: is_input_of
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: true {note="In very unusual cases"}
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_operation:0004 ! Operation
+range: EDAM_data:0006 ! Data
+
+[Typedef]
+id: is_input_of
+name: is input of
+subset: relations
+def: "'A is_input_of B' defines for the subject A, that it as a necessary or actual input or input argument of the object B." [http://edamontology.org]
+comment: Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an 'Operation' function, or an entity outside of an ontology that has an 'Operation' function or is an 'Operation'. {note="In EDAM, 'is_input_of' is not explicitly defined between EDAM concepts, only the inverse 'has_input'."}
+synonym: "is input of" EXACT [http://wsio.org/is_input_of]
+synonym: "is_specified_input_of" NARROW [http://purl.obolibrary.org/obo/OBI_0000295] {note="'OBI:is_specified_input_of' only relates subjects that are a 'continuant' (snap:Continuant) with objects that are a 'planned process' (http://purl.obolibrary.org/obo/OBI_0000011)."}
+synonym: "participates_in" RELATED [OBO_REL:participates_in] {note="'OBO_REL:participates_in' is narrower in the sense that it only relates ontological categories (concepts) that are a 'continuant' (snap:Continuant) with ontological categories that are a 'process' (span:Process), and broader in the sense that it relates any participating subjects not just inputs or input arguments."}
+inverse_of: has_input
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: true {note="In very unusual cases"}
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_data:0006 ! Data
+range: EDAM_operation:0004 ! Operation
+
+[Typedef]
+id: has_output
+name: has output
+subset: relations
+def: "'A has_output B' defines for the subject A, that it has the object B as a necessary or actual output or output argument." [http://edamontology.org]
+comment: Subject A can either be concept that is or has an 'Operation' function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an 'Operation' function or is an 'Operation'. Object B can be any concept or entity. {note="In EDAM, only 'has_output' is explicitly defined between EDAM concepts ('Operation' 'has_output' 'Data'). The inverse, 'is_output_of', is not explicitly defined."}
+synonym: "has output" EXACT [http://wsio.org/has_output]
+synonym: "has_specified_output" NARROW [http://purl.obolibrary.org/obo/OBI_0000299] {note="'OBI:has_specified_output' only relates subjects that are a 'planned process' (http://purl.obolibrary.org/obo/OBI_0000011) with objects that are a 'continuant' (snap:Continuant)."}
+synonym: "has_participant" RELATED [OBO_REL:has_participant] {note="'OBO_REL:has_participant' is narrower in the sense that it only relates ontological categories (concepts) that are a 'process' (span:Process) with ontological categories that are a 'continuant' (snap:Continuant), and broader in the sense that it relates with any participating objects not just outputs or output arguments of the subject. It is also not clear whether an output (result) actually participates in the process that generates it."}
+inverse_of: is_output_of
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: true {note="In very unusual cases"}
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_operation:0004 ! Operation
+range: EDAM_data:0006 ! Data
+! NB. 'domain' and 'range' are defined in the following way in OBO format: According to that definition and the given 'range' statement, "An operation has_output An error" implies "An error is Data".
+! NB. Notably, 'domain' and 'range' in EDAM are INFORMATIVE and NOT RESTRICTIVE. They state what 'domain' and 'range' a type of relation relates among EDAM concepts, but they are valid also outside of the 'domain' and 'range', and the OBO-format definition should not apply.
+
+[Typedef]
+id: is_output_of
+name: is output of
+subset: relations
+def: "'A is_output_of B' defines for the subject A, that it as a necessary or actual output or output argument of the object B." [http://edamontology.org]
+comment: Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an 'Operation' function, or an entity outside of an ontology that has an 'Operation' function or is an 'Operation'. {note="In EDAM, 'is_output_of' is not explicitly defined between EDAM concepts, only the inverse 'has_output'."}
+synonym: "is output of" EXACT [http://wsio.org/is_output_of]
+synonym: "is_specified_output_of" NARROW [http://purl.obolibrary.org/obo/OBI_0000312] {note="'OBI:is_specified_output_of' only relates subjects that are a 'continuant' (snap:Continuant) with objects that are a 'planned process' (http://purl.obolibrary.org/obo/OBI_0000011)."}
+synonym: "participates_in" RELATED [OBO_REL:participates_in] {note="'OBO_REL:participates_in' is narrower in the sense that it only relates ontological categories (concepts) that are a 'continuant' (snap:Continuant) with ontological categories that are a 'process' (span:Process), and broader in the sense that it relates any participating subjects not just outputs or output arguments. It is also not clear whether an output (result) actually participates in the process that generates it."}
+inverse_of: has_output
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: true {note="In very unusual cases"}
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_data:0006 ! Data
+range: EDAM_operation:0004 ! Operation
+! NB. 'domain' and 'range' are defined in the following way in OBO format: According to that definition and the given 'domain' statement, An error is_output_of An operation" implies "An error is Data".
+! NB. Notably, 'domain' and 'range' in EDAM are INFORMATIVE and NOT RESTRICTIVE. They state what 'domain' and 'range' a type of relation relates among EDAM concepts, but they are valid also outside of the 'domain' and 'range', and the OBO-format definition should not apply.
+
+[Typedef]
+id: has_topic
+name: has topic
+subset: relations
+def: "'A has_topic B' defines for the subject A, that it has the object B as its topic (A is in the scope of a topic B)." [http://edamontology.org]
+comment: Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is a 'Topic', or in unexpected cases an entity outside of an ontology that is a 'Topic' or is in the role of a 'Topic'. {note="In EDAM, only 'has_topic' is explicitly defined between EDAM concepts ('Operation' or 'Data' 'has_topic' 'Topic'). The inverse, 'is_topic_of', is not explicitly defined."}
+synonym: "hasTopic" RELATED [http://annotation-ontology.googlecode.com/svn/trunk/annotation-core.owl#hasTopic] {note="'ao:hasTopic' is narrower in the sense that it only relates subjects that are an annotation, and it is broader in the sense that it relates with any resource."}
+synonym: "has-quality" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality]
+synonym: "has_quality" RELATED [http://purl.obolibrary.org/obo/OBI_0000298] {note="'OBI:has_quality' might be seen narrower in the sense that it only relates subjects that are an 'independent_continuant' (snap:IndependentContinuant) with objects that are a 'quality' (snap:Quality), and is broader in the sense that it relates with any qualities of the subject."}
+synonym: "is about" RELATED [http://purl.obolibrary.org/obo/IAO_0000136] {note="'is about' is narrower in the sense that it only relates subjects that are information artifacts and the relation is not necessarily the one of having a topic. It is broader in the sense that it relates with any object."}
+inverse_of: is_topic_of
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: true {note="In very unusual cases"}
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_operation:0004 ! Operation
+domain: EDAM_data:0006 ! Data
+range: EDAM_topic:0003 ! Topic
+! NB. 'domain' and 'range' are defined in the following way in OBO format: According to that definition and the given 'domain' statements, "My experiment has_topic Molecular mimicry" implies "My experiment is an Operation" and "My experiment is Data".
+! NB. Notably, 'domain' and 'range' in EDAM are INFORMATIVE and NOT RESTRICTIVE. They state what 'domain' and 'range' a type of relation relates among EDAM concepts, but they are valid also outside of the 'domain' and 'range', and the OBO-format definition should not apply.
+! NB: Second 'domain' line is not visible in OBO-Edit2
+
+[Typedef]
+id: is_topic_of
+name: is topic of
+subset: relations
+def: "'A is_topic_of B' defines for the subject A, that it is a topic of the object B (a topic A is the scope of B)." [http://edamontology.org]
+comment: Subject A can either be a concept that is a 'Topic', or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a 'Topic' or is in the role of a 'Topic'. Object B can be any concept or entity outside of an ontology. {note="In EDAM, 'is_topic_of' is not explicitly defined between EDAM concepts, only the inverse 'has_topic'."}
+synonym: "inherent-in" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#inherent-in]
+synonym: "quality_of" RELATED [OBO_REL:quality_of] {note="Is defined anywhere? Not in the 'unknown' version of RO. 'OBO_REL:quality_of' might be seen narrower in the sense that it only relates subjects that are a 'quality' (snap:Quality) with objects that are an 'independent_continuant' (snap:IndependentContinuant), and is broader in the sense that it relates any qualities of the object."}
+inverse_of: has_topic
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: true {note="In very unusual cases"}
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_topic:0003 ! Topic
+range: EDAM_operation:0004 ! Operation
+range: EDAM_data:0006 ! Data
+! NB. 'domain' and 'range' are defined in the following way in OBO format: According to that definition and the given 'range' statements, "Molecular mimicry is_topic_of My experiment" implies "My experiment is an Operation" and (even) "My experiment is Data".
+! NB. Notably, 'domain' and 'range' in EDAM are INFORMATIVE and NOT RESTRICTIVE. They state what 'domain' and 'range' a type of relation relates among EDAM concepts, but they are valid also outside of the 'domain' and 'range', and the OBO-format definition should not apply.
+! NB: Second 'range' line is not visible in OBO-Edit2
+
+[Typedef]
+id: has_format
+name: has format
+subset: relations
+def: "'A has_format B' defines for the subject A, that it has the object B as its data format." [http://edamontology.org]
+comment: Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) 'Data', or an input, output, input or output argument of an 'Operation'. Object B can either be a concept that is a 'Format', or in unexpected cases an entity outside of an ontology that is a 'Format' or is in the role of a 'Format'. {note="In EDAM, 'has_format' is not explicitly defined between EDAM concepts, only the inverse 'is_format_of'."}
+synonym: "has-quality" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality]
+synonym: "has_quality" RELATED [http://purl.obolibrary.org/obo/OBI_0000298] {note="'OBI:has_quality' might be seen narrower in the sense that it only relates subjects that are an 'independent_continuant' (snap:IndependentContinuant) with objects that are a 'quality' (snap:Quality), and is broader in the sense that it relates with any qualities of the subject."}
+inverse_of: is_format_of
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: false
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_data:0006 ! Data
+range: EDAM_format:1915 ! Format
+
+[Typedef]
+id: is_format_of
+name: is format of
+subset: relations
+def: "'A is_format_of B' defines for the subject A, that it is a data format of the object B." [http://edamontology.org]
+comment: Subject A can either be a concept that is a 'Format', or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a 'Format' or is in the role of a 'Format'. Object B can be any concept or entity outside of an ontology that is (or is in a role of) 'Data', or  an input, output, input or output argument of an 'Operation'. {note="In EDAM, only 'is_format_of' is explicitly defined between EDAM concepts ('Format' 'is_format_of' 'Data'). The inverse, 'has_format', is not explicitly defined."}
+synonym: "inherent-in" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#inherent-in]
+synonym: "quality_of" RELATED [OBO_REL:quality_of] {note="Is defined anywhere? Not in the 'unknown' version of RO. 'OBO_REL:quality_of' might be seen narrower in the sense that it only relates subjects that are a 'quality' (snap:Quality) with objects that are an 'independent_continuant' (snap:IndependentContinuant), and is broader in the sense that it relates any qualities of the object."}
+inverse_of: has_format
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: false
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_format:1915 ! Format
+range: EDAM_data:0006 ! Data
+
+[Typedef]
+id: has_identifier
+name: has identifier
+subset: relations
+def: "'A has_identifier B' defines for the subject A, that it has the object B as its identifier." [http://edamontology.org]
+comment: Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is an 'Identifier', or an entity outside of an ontology that is an 'Identifier' or is in the role of an 'Identifier'. {note="In EDAM, 'has_identifier' is not explicitly defined between EDAM concepts, only the inverse 'is_identifier_of'."}
+inverse_of: is_identifier_of
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: false
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_data:0006 ! Data
+range: EDAM_data:0842 ! Identifier
+! NB. 'domain' and 'range' are defined in the following way in OBO format: According to that definition and the given 'range' statement, "My car has_identifier Licence plate number" implies "My car is Data".
+! NB. Notably, 'domain' and 'range' in EDAM are INFORMATIVE and NOT RESTRICTIVE. They state what 'domain' and 'range' a type of relation relates among EDAM concepts, but they are valid also outside of the 'domain' and 'range', and the OBO-format definition should not apply.
+
+[Typedef]
+id: is_identifier_of
+name: is identifier of
+subset: relations
+def: "'A is_identifier_of B' defines for the subject A, that it is an identifier of the object B." [http://edamontology.org]
+comment: Subject A can either be a concept that is an 'Identifier', or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is an 'Identifier' or is in the role of an 'Identifier'. Object B can be any concept or entity outside of an ontology. {note="In EDAM, only 'is_identifier_of' is explicitly defined between EDAM concepts (only 'Identifier' 'is_identifier_of' 'Data'). The inverse, 'has_identifier', is not explicitly defined."}
+inverse_of: has_identifier
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: false
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_data:0842 ! Identifier
+range: EDAM_data:0006 ! Data
+! NB. 'domain' and 'range' are defined in the following way in OBO format: According to that definition and the given 'range' statement, "Licence plate number is_identifier_of My car" implies "My car is Data".
+! NB. Notably, 'domain' and 'range' in EDAM are INFORMATIVE and NOT RESTRICTIVE. They state what 'domain' and 'range' a type of relation relates among EDAM concepts, but they are valid also outside of the 'domain' and 'range', and the OBO-format definition should not apply.
+
+[Typedef]
+id: has_function
+name: has function
+subset: relations
+def: "'A has_function B' defines for the subject A, that it has the object B as its function." [http://edamontology.org]
+comment: Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is (or is in a role of) a function, or an entity outside of an ontology that is (or is in a role of) a function specification. {note="In the scope of EDAM, 'has_function' serves only for relating annotated entities outside of EDAM with 'Operation' concepts."}
+synonym: "has function" EXACT [http://wsio.org/has_function]
+synonym: "has_function" NARROW [http://purl.obolibrary.org/obo/OBI_0000306] {note="'OBI:has_function' only relates subjects that are an 'independent_continuant' (snap:IndependentContinuant), so for example no processes, with objects that are a 'function' (snap:Function). It does not define explicitly that the object is a function of the subject."}
+synonym: "has-quality" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality]
+synonym: "bearer_of" RELATED [OBO_REL:bearer_of] {note="Is defined anywhere? Not in the 'unknown' version of RO. 'OBO_REL:bearer_of' is narrower in the sense that it only relates ontological categories (concepts) that are an 'independent_continuant' (snap:IndependentContinuant) with ontological categories that are a 'specifically_dependent_continuant' (snap:SpecificallyDependentContinuant), and broader in the sense that it relates with any borne objects not just functions of the subject."}
+inverse_of: is_function_of
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: true {note="In very unusual cases"}
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+range: EDAM_operation:0004 ! Operation
+! NB. 'range' is defined in the following way in OBO format: According to that definition and the given 'range' statement, "My boss has_function Institute leadership" implies "Institute leadership is an Operation".
+! NB. Notably, 'domain' and 'range' in EDAM are INFORMATIVE and NOT RESTRICTIVE. They state what 'domain' and 'range' a type of relation relates among EDAM concepts, but they are valid also outside of the 'domain' and 'range', and the OBO-format definition should not apply.
+
+[Typedef]
+id: is_function_of
+name: is function of
+subset: relations
+def: "'A is_function_of B' defines for the subject A, that it is a function of the object B." [http://edamontology.org]
+comment: Subject A can either be concept that is (or is in a role of) a function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) a function specification. Object B can be any concept or entity. {note="Within EDAM itself, 'is_function_of' is not used."}
+synonym: "is function of" EXACT [http://wsio.org/is_function_of]
+synonym: "function_of" NARROW [OBO_REL:function_of] {note="Is defined anywhere? Not in the 'unknown' version of RO. 'OBO_REL:function_of' only relates subjects that are a 'function' (snap:Function) with objects that are an 'independent_continuant' (snap:IndependentContinuant), so for example no processes. It does not define explicitly that the subject is a function of the object."}
+synonym: "inherent-in" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#inherent-in]
+synonym: "inheres_in" RELATED [OBO_REL:inheres_in] {note="Is defined anywhere? Not in the 'unknown' version of RO. 'OBO_REL:inheres_in' is narrower in the sense that it only relates ontological categories (concepts) that are a 'specifically_dependent_continuant' (snap:SpecificallyDependentContinuant) with ontological categories that are an 'independent_continuant' (snap:IndependentContinuant), and broader in the sense that it relates any borne subjects not just functions."}
+inverse_of: has_function
+transitive_over: OBO_REL:is_a ! Every relation type (not a metadata tag) should be transitive over 'is', shouldn't it?
+is_cyclic: true {note="In very unusual cases"}
+is_reflexive: false
+is_symmetric: false
+is_anti_symmetric: false
+is_transitive: false
+domain: EDAM_operation:0004 ! Operation
+! NB. 'domain' is defined in the following way in OBO format: According to that definition and the given 'domain' statement, "Institute leadership is_function_of My boss" implies "Institute leadership is an Operation".
+! NB. Notably, 'domain' and 'range' in EDAM are INFORMATIVE and NOT RESTRICTIVE. They state what 'domain' and 'range' a type of relation relates among EDAM concepts, but they are valid also outside of the 'domain' and 'range', and the OBO-format definition should not apply.
+
+
+
+
+
+
+
+
+!
+! Concept metadata tags, modifiers, and qualifiers
+!
+
+[Typedef]
+id: regex
+name: Regular expression
+subset: concept_attributes
+def: "'Regular expression' concept attribute ('regex' metadata tag) specifies the allowed values of types of identifiers (accessions). Applicable to some other types of data, too." [http://edamontology.org]
+is_metadata_tag: true
+
+[Typedef]
+id: example
+name: Example
+subset: concept_attributes
+def: "'Example' concept attribute ('example' metadat tag) lists examples of valid values of types of identifiers (accessions). Applicable to some other types of data, too." [http://edamontology.org]
+is_metadata_tag: true
+
+[Typedef]
+id: documentation
+name: Documentation
+subset: concept_attributes
+def: "'Documentation' trailing modifier (qualifier, 'documentation') of 'xref' links of 'Format' concepts. When 'true', the link is pointing to a page with explanation, description, documentation, or specification of the given data format." [http://edamontology.org]
+synonym: "Specification" NARROW [http.//edamontology.org]
+is_metadata_tag: true
+
+[Typedef]
+id: min_cardinality
+name: Minimum cardinality
+subset: concept_attributes
+def: "'Minimum cardinality' trailing modifier ('min_cardinality') of 'has input' and 'has output' relations. Specificies the minimum number of data records consumed or produced by an operation." [http://edamontology.org]
+is_metadata_tag: true
+
+[Typedef]
+id: max_cardinality
+name: Maximum cardinality
+subset: concept_attributes
+def: "'Maximum cardinality' trailing modifier ('max_cardinality') of 'has input' and 'has output' relations. Specificies the maximum number of data records consumed or produced by an operation." [http://edamontology.org]
+comment: 'max_cardinality' is not (yet) defined among concepts in EDAM.
+is_metadata_tag: true
+
+[Typedef]
+id: cardinality
+name: Cardinality
+subset: concept_attributes
+def: "'Cardinality' trailing modifier ('cardinality') of 'has input' and 'has output' relations. Specificies the number of data records consumed or produced by an operation." [http://edamontology.org]
+comment: 'cardinality' is not (yet) defined among concepts in EDAM.
+is_metadata_tag: true
+is_a: min_cardinality
+is_a: max_cardinality
+
+[Typedef]
+id: note
+name: Note
+subset: concept_attributes
+def: "'Note' trailing modifier ('note') of any concept or ontology attributes. Contains a note for a human reader related to the given attribute." [http://edamontology.org]
+is_metadata_tag: true
+
+[Typedef]
+id: since
+name: Since
+subset: concept_attributes
+def: "'Since' trailing modifier ('since') of 'id' and 'is_obsolete: true' attributes (may be applicable to other attributes, too). Specificies the released version of the ontology in which the attribute received its current value/started to be valid. In case of 'id' this is the version in which the concept has been introduced, and in case of 'is_obsolete: true' the version in which the concept became obsolete." [http://edamontology.org]
+is_metadata_tag: true
+
+
+
+

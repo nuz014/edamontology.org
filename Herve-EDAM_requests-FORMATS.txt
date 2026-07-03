@@ -1,0 +1,25 @@
+- name: CT
+  description: connect format
+  is_a: RNA secondary structure format (http://edamontology.org/format_2076)
+  documentation: 
+  - http://rna.urmc.rochester.edu/Text/File_Formats.html
+  - http://www.ibi.vu.nl/programs/k2nwww/static/data_formats.html
+- name: SS
+  description: XRNA old input style
+  is_a: RNA secondary structure format (http://edamontology.org/format_2076)
+  documentation: http://rna.ucsc.edu/rnacenter/xrna/xrna_faq.html
+- name: RNAML
+  description: RNA Markup Language
+  is_a: 
+  - RNA secondary structure format (http://edamontology.org/format_2076)
+  - Alignment format (http://edamontology.org/format_2555)
+  - XML (http://edamontology.org/format_2332)
+  documentation: http://www-lbit.iro.umontreal.ca/rnaml/
+- name: GDE
+  description: format for the Genetic Data Environment (GDE)
+  is_a: Sequence record format (text) (http://edamontology.org/format_2551)
+  documentation: http://home.cc.umanitoba.ca/~psgendb/birchhomedir/local/pkg/gde/doc/GDE2.2_manual.pdf
+- name: BLC
+  description: block file format
+  is_a: Alignment format (text) (http://edamontology.org/format_2554)
+  documentation: http://www.compbio.dundee.ac.uk/manuals/amps/subsubsection3_18_2_5.html#SECTION00018250000000000000
